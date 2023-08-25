@@ -32,6 +32,16 @@ public:
         this->liter = liter;
     }
 
+    // Methods
+    void description()
+    {
+        cout << "---Beverage---" << endl;
+        cout << "\t" << this->name << endl;
+        cout << "\t" << this->kcal << endl;
+        cout << "\t" << this->liter << endl;
+        cout << "\t" << this->price << endl;
+    }
+
 private:
     double liter;
 

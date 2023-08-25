@@ -32,6 +32,15 @@ public:
         this->kcal = kcal;
     }
 
+    // Methods
+    void description()
+    {
+        cout << "---Grocery---" << endl;
+        cout << "\t" << this->name << endl;
+        cout << "\t" << this->kcal << endl;
+        cout << "\t" << this->price << endl;
+    }
+
 
 protected:
     int kcal;

@@ -32,6 +32,16 @@ public:
         this->kilograms = kilograms;
     }
 
+    // Methods
+    void description()
+    {
+        cout << "---Bread---" << endl;
+        cout << "\t" << this->name << endl;
+        cout << "\t" << this->kcal << endl;
+        cout << "\t" << this->kilograms << endl;
+        cout << "\t" << this->price << endl;
+    }
+
 private:
     double kilograms;
 

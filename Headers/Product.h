@@ -42,6 +42,9 @@ public:
         this->price = price;
     }
 
+    // Methods
+    virtual void description() = 0;
+
 protected:
     string name;
     double price;

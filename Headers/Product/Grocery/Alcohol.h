@@ -44,6 +44,17 @@ public:
         this->percentages = percentages;
     }
 
+    // Methods
+    void description()
+    {
+        cout << "---Alcohol---" << endl;
+        cout << "\t" << this->name << endl;
+        cout << "\t" << this->kcal << endl;
+        cout << "\t" << this->liter << endl;
+        cout << "\t" << this->percentages << endl;
+        cout << "\t" << this->price << endl;
+    }
+
 private:
     double liter;
     double percentages;
