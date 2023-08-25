@@ -37,9 +37,9 @@ public:
     {
         cout << "---Bread---" << endl;
         cout << "\t" << this->name << endl;
-        cout << "\t" << this->kcal << endl;
-        cout << "\t" << this->kilograms << endl;
-        cout << "\t" << this->price << endl;
+        cout << "\t" << this->kcal << " kcal" << endl;
+        cout << "\t" << this->kilograms << " kg" << endl;
+        cout << "\t" << this->price << "$" << endl;
     }
 
 private:

@@ -48,7 +48,6 @@ public:
 protected:
     string name;
     double price;
-
 };
 
 #endif //SUPERMARKET_MANAGEMENT_SYSTEM_PRODUCT_H

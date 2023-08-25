@@ -49,10 +49,10 @@ public:
     {
         cout << "---Alcohol---" << endl;
         cout << "\t" << this->name << endl;
-        cout << "\t" << this->kcal << endl;
-        cout << "\t" << this->liter << endl;
-        cout << "\t" << this->percentages << endl;
-        cout << "\t" << this->price << endl;
+        cout << "\t" << this->kcal << " kcal" << endl;
+        cout << "\t" << this->liter << "l" << endl;
+        cout << "\t" << this->percentages << "%" << endl;
+        cout << "\t" << this->price << "$" << endl;
     }
 
 private:
