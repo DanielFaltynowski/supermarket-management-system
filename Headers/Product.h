@@ -1,6 +1,7 @@
 #ifndef SUPERMARKET_MANAGEMENT_SYSTEM_PRODUCT_H
 #define SUPERMARKET_MANAGEMENT_SYSTEM_PRODUCT_H
 #include <iostream>
+#include "../Utilities/idGenerator.cpp"
 
 using namespace std;
 
@@ -10,17 +11,28 @@ public:
     // Constructors
     Product()
     {
+        this->id = idGenerator();
+
         this->name = "Unknown";
         this->price = 0;
+        this->amount = 0;
     }
 
     Product(string name, double price)
     {
+        this->id = idGenerator();
+
         this->name = name;
         this->price = price;
+        this->amount = 0;
     }
 
     // Getters
+    string getId()
+    {
+        return this->id;
+    }
+
     string getName()
     {
         return this->name;
@@ -29,6 +41,11 @@ public:
     double getPrice()
     {
         return this->price;
+    }
+
+    int getAmount()
+    {
+        return this->amount;
     }
 
     // Setters
@@ -45,9 +62,50 @@ public:
     // Methods
     virtual void description() = 0;
 
+    void addProduct()
+    {
+        this->amount++;
+        cout << this->name << ": Added one!" << endl;
+    }
+
+    void addProduct(int number)
+    {
+        this->amount = this->amount + number;
+        cout << this->name << ": Added " << number << " products!" << endl;
+    }
+
+    void removeProduct()
+    {
+        if (this->amount > 0)
+        {
+            this->amount--;
+            cout << this->name << ": Removed one!" << endl;
+        }
+        else
+        {
+            cout << this->name << ": cannot remove product!" << endl;
+        }
+    }
+
+    void removeProduct(int number)
+    {
+        if (this->amount - number >= 0)
+        {
+            this->amount--;
+            cout << this->name << ": Added " << number << " products!" << endl;
+        }
+        else
+        {
+            cout << this->name << ": cannot remove product!" << endl;
+        }
+    }
+
 protected:
+    string id;
+
     string name;
     double price;
+    int amount;
 };
 
 #endif //SUPERMARKET_MANAGEMENT_SYSTEM_PRODUCT_H
