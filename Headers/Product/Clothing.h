@@ -15,7 +15,7 @@ public:
         this->size = "Unknown";
     }
 
-    Clothing(string name, int price, string size) : Product(name, price)
+    Clothing(string name, double price, string size) : Product(name, price)
     {
         this->size = size;
     }
@@ -39,6 +39,7 @@ public:
         cout << "\t" << this->name << endl;
         cout << "\t" << this->size << " size" << endl;
         cout << "\t" << this->price << "$" << endl;
+        cout << endl;
     }
 
 private:

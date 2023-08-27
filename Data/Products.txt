@@ -1,0 +1,8 @@
+Grocery;Danonek;9.90;409
+Bread;Wodka;9.90;409;3
+Grocery;Banan;9.90;409
+Beverage;Wodka;9.90;409;0.5
+Grocery;Truskawka;9.90;409
+Alcohol;Wodka;9.90;409;0.5;40.0
+Toy;Ted;9.80;5
+Clothing;Zara;8.70;M

@@ -40,6 +40,7 @@ public:
         cout << "\t" << this->kcal << " kcal" << endl;
         cout << "\t" << this->liter << "l" << endl;
         cout << "\t" << this->price << "$" << endl;
+        cout << endl;
     }
 
 private:

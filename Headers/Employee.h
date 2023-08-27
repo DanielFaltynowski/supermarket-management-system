@@ -1,7 +1,6 @@
 #ifndef SUPERMARKET_MANAGEMENT_SYSTEM_EMPLOYEE_H
 #define SUPERMARKET_MANAGEMENT_SYSTEM_EMPLOYEE_H
 #include <iostream>
-#include "../Utilities/idGenerator.cpp"
 
 using namespace std;
 
@@ -11,7 +10,6 @@ private:
     // Constructors
     Employee(string firstName, string lastName, string contact, string position, double earnings)
     {
-        this->id = idGenerator();
         this->firstName = firstName;
         this->lastName = lastName;
         this->contact = contact;
@@ -20,11 +18,6 @@ private:
     }
 
     // Getters
-    string getId()
-    {
-        return this->id;
-    }
-
     string getFirstName()
     {
         return this->firstName;
@@ -88,8 +81,6 @@ private:
     }
 
 protected:
-    string id;
-
     string firstName;
     string lastName;
     string contact;

@@ -39,6 +39,7 @@ public:
         cout << "\t" << this->name << endl;
         cout << "\t" << "Recommended age: " << this->age << endl;
         cout << "\t" << this->price << "$" << endl;
+        cout << endl;
     }
 
 protected:

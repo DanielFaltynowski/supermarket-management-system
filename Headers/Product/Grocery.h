@@ -39,6 +39,7 @@ public:
         cout << "\t" << this->name << endl;
         cout << "\t" << this->kcal << " kcal" << endl;
         cout << "\t" << this->price << "$" << endl;
+        cout << endl;
     }
 
 

@@ -53,6 +53,7 @@ public:
         cout << "\t" << this->liter << "l" << endl;
         cout << "\t" << this->percentages << "%" << endl;
         cout << "\t" << this->price << "$" << endl;
+        cout << endl;
     }
 
 private:

@@ -1,7 +1,6 @@
 #ifndef SUPERMARKET_MANAGEMENT_SYSTEM_PRODUCT_H
 #define SUPERMARKET_MANAGEMENT_SYSTEM_PRODUCT_H
 #include <iostream>
-#include "../Utilities/idGenerator.cpp"
 
 using namespace std;
 
@@ -11,8 +10,6 @@ public:
     // Constructors
     Product()
     {
-        this->id = idGenerator();
-
         this->name = "Unknown";
         this->price = 0;
         this->amount = 0;
@@ -20,19 +17,12 @@ public:
 
     Product(string name, double price)
     {
-        this->id = idGenerator();
-
         this->name = name;
         this->price = price;
         this->amount = 0;
     }
 
     // Getters
-    string getId()
-    {
-        return this->id;
-    }
-
     string getName()
     {
         return this->name;
@@ -101,8 +91,6 @@ public:
     }
 
 protected:
-    string id;
-
     string name;
     double price;
     int amount;
