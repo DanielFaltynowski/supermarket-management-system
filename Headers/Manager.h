@@ -98,44 +98,62 @@ public:
 
     void createGrocery(string name, double price, int kcal)
     {
-        Grocery grocery(name, price, kcal);
-        this->groceries[groceriesCounter] = grocery;
-        groceriesCounter++;
+        if (this->groceriesCounter < this->size)
+        {
+            Grocery grocery(name, price, kcal);
+            this->groceries[this->groceriesCounter] = grocery;
+            this->groceriesCounter++;
+        }
     }
 
     void createAlcohol(string name, double price, int kcal, double liter, double percentages)
     {
-        Alcohol alcohol(name, price, kcal, liter, percentages);
-        this->alcohols[alcoholsCounter] = alcohol;
-        alcoholsCounter++;
+        if (this->alcoholsCounter < this->size)
+        {
+            Alcohol alcohol(name, price, kcal, liter, percentages);
+            this->alcohols[this->alcoholsCounter] = alcohol;
+            this->alcoholsCounter++;
+        }
     }
 
     void createBeverage(string name, double price, int kcal, double percentages)
     {
-        Beverage beverage(name, price, kcal, percentages);
-        this->beverages[beveragesCounter] = beverage;
-        beveragesCounter++;
+        if (this->beveragesCounter < this->size)
+        {
+            Beverage beverage(name, price, kcal, percentages);
+            this->beverages[this->beveragesCounter] = beverage;
+            this->beveragesCounter++;
+        }
     }
 
     void createBread(string name, double price, int kcal, double kilograms)
     {
-        Bread bread(name, price, kcal, kilograms);
-        this->breads[breadsCounter] = bread;
-        breadsCounter++;
+        if (this->breadsCounter < this->size)
+        {
+            Bread bread(name, price, kcal, kilograms);
+            this->breads[this->breadsCounter] = bread;
+            this->breadsCounter++;
+        }
     }
 
     void createClothing(string name, double price, string size)
     {
-        Clothing clothing(name, price, size);
-        this->clothes[clothesCounter] = clothing;
-        clothesCounter++;
+        if (this->clothesCounter < this->size)
+        {
+            Clothing clothing(name, price, size);
+            this->clothes[this->clothesCounter] = clothing;
+            this->clothesCounter++;
+        }
     }
 
     void createToy(string name, double price, unsigned short age)
     {
-        Toy toy(name, price, age);
-        this->toys[toysCounter] = toy;
-        toysCounter++;
+        if (this->toysCounter < this->size)
+        {
+            Toy toy(name, price, age);
+            this->toys[this->toysCounter] = toy;
+            this->toysCounter++;
+        }
     }
 
     void printAllProducts()
@@ -168,6 +186,21 @@ public:
         for (int i = 0; i < toysCounter; i++)
         {
             toys[i].description();
+        }
+    }
+
+    void addToProductsDatabase(string data)
+    {
+        ofstream File;
+        File.open("Data/Products.txt", ios::app);
+        if (File.is_open())
+        {
+            File << data << "\n";
+            cout << "Inserted!" << endl;
+        }
+        else
+        {
+            cout << "Cannot insert data to database!" << endl;
         }
     }
 

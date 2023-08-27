@@ -6,3 +6,5 @@ Grocery;Truskawka;9.90;409
 Alcohol;Wodka;9.90;409;0.5;40.0
 Toy;Ted;9.80;5
 Clothing;Zara;8.70;M
+Clothing;Cropp;8.70;M
+Clothing;Venus;8.70;M
