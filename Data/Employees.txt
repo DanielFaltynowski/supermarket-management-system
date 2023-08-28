@@ -1,2 +1,2 @@
-Jan;Kowalski;jankowalski@gmail.com;Cashier;3000
-Janina;Kowalska;janinakowalska@gmail.com;Cashier;4000
+Jan;Kowalski;jankowalski@gmail.com;Cashier;3000.000000;
+Janina;Kowalska;janinakowalska@gmail.com;Cashier;4000.000000;

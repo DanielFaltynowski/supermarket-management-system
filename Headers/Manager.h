@@ -11,6 +11,7 @@
 #include <fstream>
 #include <ios>
 #include <vector>
+#include <cstdio>
 #include <boost/algorithm/string.hpp>
 
 using namespace std;
@@ -42,6 +43,169 @@ public:
 
         this->employees = new Employee[size];
         this->employeesCounter = 0;
+    }
+
+    ~Manager()
+    {
+        ofstream File;
+
+        File.open("Data/Products2.txt", ios::app);
+        if (File.is_open())
+        {
+            for (int i = 0; i < groceriesCounter; i++)
+            {
+                if (groceries[i].getName() != "Unknown")
+                {
+                    string text = "Grocery;";
+
+                    text = text + groceries[i].getName() + ";";
+                    text = text + to_string(groceries[i].getPrice()) + ";";
+                    text = text + to_string(groceries[i].getKcal()) + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+
+            for (int i = 0; i < alcoholsCounter; i++)
+            {
+                if (alcohols[i].getName() != "Unknown")
+                {
+                    string text = "Alcohol;";
+
+                    text = text + alcohols[i].getName() + ";";
+                    text = text + to_string(alcohols[i].getPrice()) + ";";
+                    text = text + to_string(alcohols[i].getKcal()) + ";";
+                    text = text + to_string(alcohols[i].getLiter()) + ";";
+                    text = text + to_string(alcohols[i].getPercentages()) + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+
+            for (int i = 0; i < beveragesCounter; i++)
+            {
+                if (beverages[i].getName() != "Unknown")
+                {
+                    string text = "Beverage;";
+
+                    text = text + beverages[i].getName() + ";";
+                    text = text + to_string(beverages[i].getPrice()) + ";";
+                    text = text + to_string(beverages[i].getKcal()) + ";";
+                    text = text + to_string(beverages[i].getLiter()) + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+
+            for (int i = 0; i < breadsCounter; i++)
+            {
+                if (breads[i].getName() != "Unknown")
+                {
+                    string text = "Bread;";
+
+                    text = text + breads[i].getName() + ";";
+                    text = text + to_string(breads[i].getPrice()) + ";";
+                    text = text + to_string(breads[i].getKcal()) + ";";
+                    text = text + to_string(breads[i].getKilograms()) + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+
+            for (int i = 0; i < clothesCounter; i++)
+            {
+                if (clothes[i].getName() != "Unknown")
+                {
+                    string text = "Clothing;";
+
+                    text = text + clothes[i].getName() + ";";
+                    text = text + to_string(clothes[i].getPrice()) + ";";
+                    text = text + clothes[i].getSize() + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+
+            for (int i = 0; i < toysCounter; i++)
+            {
+                if (toys[i].getName() != "Unknown")
+                {
+                    string text = "Toy;";
+
+                    text = text + toys[i].getName() + ";";
+                    text = text + to_string(toys[i].getPrice()) + ";";
+                    text = text + to_string(toys[i].getAge()) + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+            File.close();
+
+            if (std::remove("Data/Products.txt") == 0) {
+                std::cout << "Product's Database saved." << std::endl;
+            } else {
+                std::cout << "Cannot save the Product's database." << std::endl;
+            }
+
+            if (std::rename("Data/Products2.txt", "Data/Products.txt") == 0) {
+                std::cout << "Have a nice day." << std::endl;
+            } else {
+                std::cout << "Error occured." << std::endl;
+            }
+        }
+        else
+        {
+            cout << "Critic error occured" << endl;
+        }
+
+        File.open("Data/Employees2.txt", ios::app);
+        if (File.is_open()) {
+            for (int i = 0; i < employeesCounter; i++) {
+                if (employees[i].getLastName() != "Unknown") {
+                    string text = "";
+
+                    text = text + employees[i].getFirstName() + ";";
+                    text = text + employees[i].getLastName() + ";";
+                    text = text + employees[i].getContact() + ";";
+                    text = text + employees[i].getPosition() + ";";
+                    text = text + to_string(employees[i].getEarnings()) + ";";
+                    text = text + "\n";
+
+                    File << text;
+
+                }
+            }
+            File.close();
+
+            if (std::remove("Data/Employees.txt") == 0) {
+                std::cout << "Employee's Database saved." << std::endl;
+            } else {
+                std::cout << "Cannot save the Employee's database." << std::endl;
+            }
+
+            if (std::rename("Data/Employees2.txt", "Data/Employees.txt") == 0) {
+                std::cout << "Have a nice day." << std::endl;
+            } else {
+                std::cout << "Error occured." << std::endl;
+            }
+        }
+        else
+        {
+            cout << "Critic error occured" << endl;
+        }
+
     }
 
     // Methods
@@ -349,6 +513,78 @@ public:
         }
     }
 
+    void findGroceryByPrice(double price)
+    {
+        for (int i = 0; i < groceriesCounter; i++)
+        {
+            if (groceries[i].getPrice() <= price)
+            {
+                cout << "GroceriesID: " << i << endl;
+                groceries[i].description();
+            }
+        }
+    }
+
+    void findAlcoholByPrice(double price)
+    {
+        for (int i = 0; i < alcoholsCounter; i++)
+        {
+            if (alcohols[i].getPrice() <= price)
+            {
+                cout << "AlcoholsID: " << i << endl;
+                alcohols[i].description();
+            }
+        }
+    }
+
+    void findBeverageByPrice(double price)
+    {
+        for (int i = 0; i < beveragesCounter; i++)
+        {
+            if (beverages[i].getPrice() <= price)
+            {
+                cout << "BeveragesID: " << i << endl;
+                beverages[i].description();
+            }
+        }
+    }
+
+    void findBreadByPrice(double price)
+    {
+        for (int i = 0; i < breadsCounter; i++)
+        {
+            if (breads[i].getPrice() <= price)
+            {
+                cout << "BreadsID: " << i << endl;
+                breads[i].description();
+            }
+        }
+    }
+
+    void findClothingByPrice(double price)
+    {
+        for (int i = 0; i < clothesCounter; i++)
+        {
+            if (clothes[i].getPrice() <= price)
+            {
+                cout << "ClothesID: " << i << endl;
+                clothes[i].description();
+            }
+        }
+    }
+
+    void findToyByPrice(double price)
+    {
+        for (int i = 0; i < toysCounter; i++)
+        {
+            if (toys[i].getPrice() == price)
+            {
+                cout << "ToysID: " << i << endl;
+                toys[i].description();
+            }
+        }
+    }
+
     void findGroceryById(int id)
     {
         if (groceries[id].getName() != "Unknown")
@@ -440,37 +676,118 @@ public:
         }
     }
 
-    void addToProductsDatabase(string data)
+    void findEmployeeBySalary(double salary)
     {
-        ofstream File;
-        File.open("Data/Products.txt", ios::app);
-        if (File.is_open())
+        for (int i = 0; i < employeesCounter; i++)
         {
-            File << data << "\n";
-            cout << "Inserted!" << endl;
-        }
-        else
-        {
-            cout << "Cannot insert data to database!" << endl;
+            if (employees[i].getEarnings() == salary)
+            {
+                cout << "EmployeeID: " << i << endl;
+                employees[i].personalDetails();
+            }
         }
     }
 
-    void addToEmployeesDatabase(string data)
+    void editGrocery(int id, string name, double price, int kcal)
     {
-        ofstream File;
-        File.open("Data/Employees.txt", ios::app);
-        if (File.is_open())
-        {
-            File << data << "\n";
-            cout << "Inserted!" << endl;
-        }
-        else
-        {
-            cout << "Cannot insert data to database!" << endl;
-        }
+        groceries[id].setName(name);
+        groceries[id].setPrice(price);
+        groceries[id].setKcal(kcal);
     }
 
+    void editAlcohol(int id, string name, double price, int kcal, double liter, double percentages)
+    {
+        alcohols[id].setName(name);
+        alcohols[id].setPrice(price);
+        alcohols[id].setKcal(kcal);
+        alcohols[id].setLiter(liter);
+        alcohols[id].setPercentages(percentages);
+    }
 
+    void editBeverage(int id, string name, double price, int kcal, double liter)
+    {
+        beverages[id].setName(name);
+        beverages[id].setPrice(price);
+        beverages[id].setKcal(kcal);
+        beverages[id].setLiter(liter);
+    }
+
+    void editBread(int id, string name, double price, int kcal, double kilograms)
+    {
+        breads[id].setName(name);
+        breads[id].setPrice(price);
+        breads[id].setKcal(kcal);
+        breads[id].setKilograms(kilograms);
+    }
+
+    void editClothing(int id, string name, double price, string size)
+    {
+        clothes[id].setName(name);
+        clothes[id].setPrice(price);
+        clothes[id].setSise(size);
+    }
+
+    void editToy(int id, string name, double price, unsigned short age)
+    {
+        toys[id].setName(name);
+        toys[id].setPrice(price);
+        toys[id].setAge(age);
+    }
+
+    void deleteGrocery(int id)
+    {
+        groceries[id].setName("Unknown");
+        groceries[id].setPrice(0);
+        groceries[id].setKcal(0);
+    }
+
+    void deleteAlcohol(int id)
+    {
+        alcohols[id].setName("Unknown");
+        alcohols[id].setPrice(0);
+        alcohols[id].setKcal(0);
+        alcohols[id].setLiter(0);
+        alcohols[id].setPercentages(0);
+    }
+
+    void deleteBeverage(int id)
+    {
+        beverages[id].setName("Unknown");
+        beverages[id].setPrice(0);
+        beverages[id].setKcal(0);
+        beverages[id].setLiter(0);
+    }
+
+    void deleteBread(int id)
+    {
+        breads[id].setName("Unknown");
+        breads[id].setPrice(0);
+        breads[id].setKcal(0);
+        breads[id].setKilograms(0);
+    }
+
+    void deleteClothing(int id)
+    {
+        clothes[id].setName("Unknown");
+        clothes[id].setPrice(0);
+        clothes[id].setSise("Unknown");
+    }
+
+    void deleteToy(int id)
+    {
+        toys[id].setName("Unknown");
+        toys[id].setPrice(0);
+        toys[id].setAge(0);
+    }
+
+    void deleteEmployee(int id)
+    {
+        employees[id].setFirstName("Unknown");
+        employees[id].setLastName("Unknown");
+        employees[id].setContact("Unknown");
+        employees[id].setEarnings(0);
+        employees[id].setPosition("Unknown");
+    }
 
 private:
     Grocery *groceries;
