@@ -1,10 +1,244 @@
-Grocery;Danonek;9.90;409
-Bread;Wodka;9.90;409;3
-Grocery;Banan;9.90;409
-Beverage;Wodka;9.90;409;0.5
-Grocery;Truskawka;9.90;409
-Alcohol;Wodka;9.90;409;0.5;40.0
-Toy;Ted;9.80;5
-Clothing;Zara;8.70;M
-Clothing;Cropp;8.70;M
-Clothing;Venus;8.70;M
+Alcohol;Whiskey;50.0;0;0.7;40.0
+Alcohol;Vodka;20.0;0;0.7;37.5
+Alcohol;Rum;30.0;0;0.5;45.0
+Alcohol;Tequila;25.0;0;0.75;30.0
+Alcohol;Gin;35.0;0;0.7;55.0
+Alcohol;Brandy;28.0;0;0.7;42.0
+Alcohol;Beer;5.0;0;0.5;4.0
+Alcohol;Cider;4.5;0;0.33;5.0
+Alcohol;Absinthe;60.0;0;0.5;60.0
+Alcohol;Rye Whiskey;40.0;0;0.7;10.0
+Alcohol;Rum;37.5;0;0.5;5.0
+Alcohol;Scotch;45.0;0;0.75;20.0
+Alcohol;Moonshine;25.0;0;0.2;12.0
+Alcohol;Sake;15.0;0;0.5;15.0
+Alcohol;Pisco;35.0;0;0.7;7.0
+Alcohol;Cognac;30.0;0;0.35;10.0
+Alcohol;White Wine;12.0;0;0.7;30.0
+Alcohol;Red Wine;15.0;0;0.6;25.0
+Alcohol;Rose Wine;10.0;0;0.5;18.0
+Alcohol;Champagne;20.0;0;0.75;38.0
+Alcohol;Sparkling Wine;12.0;0;0.5;8.0
+Alcohol;Port Wine;17.0;0;0.7;15.0
+Alcohol;Sherry;8.0;0;0.33;6.0
+Alcohol;Prosecco;9.5;0;0.4;7.0
+Alcohol;Fortified Wine;26.0;0;0.7;34.0
+Alcohol;Mulled Wine;21.0;0;0.7;45.0
+Alcohol;Liqueur;18.0;0;0.5;50.0
+Alcohol;Aperitif;22.0;0;0.75;55.0
+Alcohol;Bitters;12.0;0;0.7;10.0
+Alcohol;Sambuca;16.0;0;0.5;15.0
+Alcohol;Kahlua;10.0;0;0.33;7.0
+Alcohol;Baileys;15.0;0;0.4;5.0
+Alcohol;Amaretto;12.0;0;0.6;10.0
+Alcohol;Midori;25.0;0;0.7;40.0
+Alcohol;Campari;18.0;0;0.75;32.0
+Alcohol;Grand Marnier;30.0;0;0.6;38.0
+Alcohol;Chartreuse;40.0;0;0.7;50.0
+Alcohol;Frangelico;25.0;0;0.75;58.0
+Alcohol;Creme de Menthe;20.0;0;0.8;65.0
+Alcohol;Triple Sec;22.0;0;0.7;60.0
+Alcohol;Galliano;28.0;0;0.75;63.0
+Alcohol;Cointreau;32.0;0;0.7;70.0
+Alcohol;Chambord;26.0;0;0.75;75.0
+Alcohol;Sloe Gin;18.0;0;0.8;80.0
+Alcohol;Drambuie;24.0;0;0.75;78.0
+Alcohol;Fernet;25.0;0;0.7;72.0
+Alcohol;Kirsch;30.0;0;0.6;55.0
+Alcohol;Limencello;22.0;0;0.7;71.0
+Alcohol;Ouzo;15.0;0;0.75;76.0
+Alcohol;Aquavit;20.0;0;0.7;74.0
+Alcohol;Schnapps;18.0;0;0.65;68.0
+Alcohol;Anisette;10.0;0;0.5;52.0
+Alcohol;Pernod;26.0;0;0.7;69.0
+Alcohol;Sangria;12.0;0;0.85;85.0
+Alcohol;Jagermeister;18.0;0;0.9;90.0
+Alcohol;Sambuca;25.0;0;0.95;95.0
+Beverage;Water;1.0;0;1.0
+Beverage;Cola;1.5;140;0.33
+Beverage;Orange Juice;2.0;110;0.25
+Beverage;Apple Juice;1.8;120;0.25
+Beverage;Lemonade;1.2;100;0.33
+Beverage;Iced Tea;1.7;80;0.5
+Beverage;Coffee;2.5;5;0.3
+Beverage;Hot Chocolate;2.2;180;0.25
+Beverage;Energy Drink;2.8;110;0.25
+Beverage;Sports Drink;1.5;50;0.5
+Beverage;Smoothie;3.5;220;0.4
+Beverage;Milkshake;4.0;300;0.35
+Beverage;Sparkling Water;1.2;0;1.0
+Beverage;Herbal Tea;1.0;0;0.25
+Beverage;Fruit Infused Water;1.5;5;0.5
+Beverage;Soda Water;1.0;0;0.33
+Beverage;Coconut Water;2.2;45;0.33
+Beverage;Fruit Juice Blend;2.5;120;0.4
+Beverage;Plant-Based Milk;2.0;60;0.25
+Beverage;Kombucha;3.0;30;0.35
+Beverage;Cold Brew Coffee;3.5;10;0.25
+Beverage;Almond Milk;2.5;50;0.3
+Beverage;Cranberry Juice;2.0;150;0.25
+Beverage;Grape Juice;2.2;130;0.25
+Beverage;Pineapple Juice;1.8;110;0.25
+Beverage;Tomato Juice;1.5;50;0.25
+Beverage;Vegetable Juice Blend;2.2;60;0.4
+Beverage;Wheatgrass Juice;3.0;5;0.1
+Beverage;Pomegranate Juice;2.8;140;0.25
+Beverage;Prune Juice;2.5;180;0.25
+Beverage;Rice Milk;2.0;80;0.25
+Beverage;Soy Milk;2.5;90;0.25
+Beverage;Oat Milk;2.2;100;0.25
+Beverage;Cashew Milk;3.0;50;0.25
+Beverage;Hemp Milk;3.5;60;0.25
+Beverage;Lavender Tea;1.0;0;0.25
+Beverage;Chamomile Tea;1.0;0;0.25
+Beverage;Peppermint Tea;1.0;0;0.25
+Beverage;Ginger Tea;1.2;5;0.25
+Beverage;Hibiscus Tea;1.5;0;0.25
+Beverage;Lemon Tea;1.2;10;0.25
+Beverage;Rooibos Tea;1.5;0;0.25
+Beverage;White Tea;1.8;0;0.25
+Beverage;Green Tea;1.8;0;0.25
+Beverage;Black Tea;1.5;0;0.25
+Bread;White Bread;2.0;80;0.5
+Bread;Whole Wheat Bread;2.5;90;0.5
+Bread;Multigrain Bread;3.0;100;0.5
+Bread;Rye Bread;2.8;70;0.5
+Bread;Sourdough Bread;3.5;120;0.5
+Bread;Baguette;2.0;150;0.25
+Bread;Ciabatta;2.5;130;0.35
+Bread;Pita Bread;1.5;100;0.2
+Bread;Naan;1.8;120;0.2
+Bread;Tortilla;1.2;80;0.1
+Bread;Focaccia;2.8;180;0.3
+Bread;Brioche;3.0;160;0.4
+Bread;English Muffin;1.5;120;0.1
+Bread;Cinnamon Raisin Bread;3.2;150;0.5
+Bread;Sesame Bread;2.5;110;0.5
+Bread;Oatmeal Bread;2.2;100;0.5
+Bread;Cornbread;2.0;160;0.5
+Bread;Raisin Bread;2.8;140;0.5
+Bread;Garlic Bread;2.5;180;0.3
+Bread;Flatbread;1.8;90;0.15
+Bread;Fruit Bread;3.5;130;0.5
+Bread;Wheat Germ Bread;2.0;80;0.5
+Bread;Sunflower Seed Bread;2.5;100;0.5
+Bread;Pumpkin Seed Bread;2.8;110;0.5
+Bread;Poppy Seed Bread;2.2;120;0.5
+Bread;Pretzel Bread;2.5;150;0.4
+Bread;Whole Grain Bread;2.2;90;0.5
+Bread;Nut Bread;3.0;160;0.5
+Bread;Cheese Bread;2.8;180;0.4
+Bread;Olive Bread;2.5;170;0.4
+Bread;Sesame Bagel;1.5;250;0.1
+Bread;Blueberry Bagel;1.8;280;0.1
+Bread;Cinnamon Raisin Bagel;2.0;260;0.1
+Bread;Onion Bagel;1.8;230;0.1
+Bread;Everything Bagel;2.5;270;0.1
+Bread;Pumpernickel Bread;2.5;80;0.5
+Bread;Marble Rye Bread;3.0;90;0.5
+Bread;Gluten-Free Bread;3.5;110;0.5
+Bread;Soda Bread;2.2;120;0.5
+Bread;Pretzel;1.0;150;0.1
+Bread;Pita;1.2;100;0.1
+Bread;Bagel;1.5;250;0.1
+Bread;Croissant;2.0;200;0.1
+Bread;Danish Pastry;2.5;220;0.1
+Clothing;T-Shirt;15.0;M
+Clothing;Jeans;40.0;32
+Clothing;Dress;50.0;S
+Clothing;Sweater;30.0;L
+Clothing;Shorts;20.0;M
+Clothing;Jacket;70.0;XL
+Clothing;Skirt;25.0;S
+Clothing;Hoodie;35.0;M
+Clothing;Blouse;25.0;S
+Clothing;Pants;30.0;34
+Clothing;Coat;60.0;L
+Clothing;Shirt;20.0;M
+Clothing;Suit;100.0;XL
+Clothing;Gown;80.0;M
+Clothing;Sweatshirt;25.0;L
+Clothing;Blazer;45.0;S
+Clothing;Overalls;35.0;32
+Clothing;Romper;30.0;S
+Clothing;Pullover;30.0;M
+Clothing;Vest;25.0;L
+Clothing;Cardigan;30.0;S
+Clothing;Pajamas;20.0;M
+Clothing;Trousers;35.0;34
+Clothing;Kimono;40.0;S
+Clothing;Jumpsuit;40.0;M
+Clothing;Windbreaker;45.0;L
+Clothing;Jersey;25.0;XL
+Clothing;Sarong;15.0;S
+Clothing;Duster;40.0;M
+Clothing;Leggings;20.0;S
+Clothing;Raincoat;35.0;L
+Clothing;Robe;25.0;M
+Clothing;Sweatpants;25.0;L
+Clothing;Polo Shirt;20.0;M
+Clothing;Chinos;30.0;32
+Clothing;Poncho;25.0;S
+Clothing;Henley Shirt;15.0;M
+Clothing;Cargo Pants;35.0;34
+Clothing;Tunic;25.0;S
+Clothing;Flannel Shirt;20.0;M
+Clothing;Culottes;30.0;L
+Clothing;Trench Coat;50.0;M
+Clothing;Harem Pants;25.0;S
+Clothing;Tuxedo;80.0;XL
+Clothing;Anorak;40.0;S
+Clothing;Jerkin;30.0;M
+Clothing;Tweed Jacket;60.0;L
+Clothing;Spaghetti Strap Top;15.0;M
+Clothing;Capri Pants;25.0;S
+Clothing;Waistcoat;30.0;32
+Clothing;Cape;35.0;S
+Clothing;Parka;45.0;L
+Clothing;Pea Coat;40.0;M
+Toy;Teddy Bear;15.0;3
+Toy;Lego Set;25.0;6
+Toy;Doll;20.0;4
+Toy;Action Figure;10.0;5
+Toy;Puzzle;12.0;7
+Toy;Remote Control Car;30.0;8
+Toy;Board Game;20.0;7
+Toy;Play-Doh Set;8.0;3
+Toy;Building Blocks;15.0;2
+Toy;Stuffed Animal;10.0;1
+Toy;Art Kit;18.0;6
+Toy;Musical Instrument;40.0;5
+Toy;Science Kit;25.0;9
+Toy;Dress-Up Set;15.0;4
+Toy;Model Kit;20.0;10
+Toy;Tricycle;35.0;2
+Toy;Kite;10.0;4
+Toy;Bicycle;70.0;6
+Toy;Yo-Yo;5.0;8
+Toy;Scooter;25.0;7
+Toy;Puppet;12.0;3
+Toy;Train Set;30.0;3
+Toy;Ride-On Car;50.0;2
+Toy;Rocking Horse;40.0;1
+Toy;Educational Tablet;30.0;5
+Toy;Sticker Book;8.0;4
+Toy;Bubble Wand;3.0;2
+Toy;Drawing Set;10.0;6
+Toy;Toy Kitchen Set;25.0;3
+Toy;Dinosaur Figure;6.0;4
+Toy;Bath Toy Set;15.0;1
+Toy;Jump Rope;5.0;5
+Toy;Play Kitchen;40.0;2
+Toy;Toy Drum Set;20.0;3
+Toy;Model Rocket;15.0;10
+Toy;Coloring Book;4.0;4
+Toy;Glow-in-the-Dark Stars;6.0;6
+Toy;Toy Tool Set;12.0;4
+Toy;Toy Cash Register;18.0;3
+Toy;Guitar;30.0;7
+Toy;Toy Telescope;25.0;8
+Toy;Toy Microscope;20.0;9
+Toy;Toy Camera;15.0;3
+Toy;Stuffed Unicorn;10.0;1
+Toy;Remote Control Drone;50.0;10
+Toy;RC Helicopter;40.0;8

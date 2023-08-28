@@ -6,8 +6,17 @@ using namespace std;
 
 class Employee
 {
-private:
+public:
     // Constructors
+    Employee()
+    {
+        this->firstName = "Unknown";
+        this->lastName = "Unknown";
+        this->contact = "Unknown";
+        this->position = "Unknown";
+        this->earnings = 0;
+    }
+
     Employee(string firstName, string lastName, string contact, string position, double earnings)
     {
         this->firstName = firstName;
@@ -78,6 +87,7 @@ private:
         cout << "\t" << "Position: " << this->position << endl;
         cout << "\t" << "Earnings: " << this->earnings << endl;
         cout << "\t" << "Contact: " << this->contact << endl;
+        cout << endl;
     }
 
 protected:
