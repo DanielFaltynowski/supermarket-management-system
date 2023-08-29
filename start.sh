@@ -1,2 +1,3 @@
-g++ main.cpp -o main.exe || echo "Remember to install Boost!";
+echo "Hello, I'd like to introduce you to my project, a supermarket management application! I hope you like it!";
+g++ main.cpp Headers/ManagerUtilities/Constructors/managerConstructor.cpp Headers/ManagerUtilities/Constructors/managerDestructor.cpp Headers/ManagerUtilities/Methods/creators.cpp Headers/ManagerUtilities/Methods/deletors.cpp Headers/ManagerUtilities/Methods/editors.cpp Headers/ManagerUtilities/Methods/employeesFinders.cpp Headers/ManagerUtilities/Methods/printers.cpp Headers/ManagerUtilities/Methods/productsFindersById.cpp Headers/ManagerUtilities/Methods/productsFindersByName.cpp Headers/ManagerUtilities/Methods/productsFindersByPrice.cpp Headers/ManagerUtilities/Methods/importers.cpp  -o main.exe || echo "Something gone wrong! Remember to have installed Boost!";
 ./main.exe || echo "Remember to install Boost!";
