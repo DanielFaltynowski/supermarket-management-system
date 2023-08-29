@@ -1,5 +1,16 @@
 #include "../../Manager.h"
 
+void Manager::findProductByPrice(double price)
+{
+    findGroceryByPrice(price);
+//    findBreadByName(id);
+    findBeverageByPrice(price);
+    findAlcoholByPrice(price);
+    findClothingByPrice(price);
+    findToyByPrice(price);
+
+}
+
 void Manager::findGroceryByPrice(double price)
 {
     for (int i = 0; i < groceriesCounter; i++)

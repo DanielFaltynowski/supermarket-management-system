@@ -1,5 +1,16 @@
 #include "../../Manager.h"
 
+void Manager::findProductById(int id)
+{
+    findGroceryById(id);
+//    findBreadByName(id);
+    findBeverageById(id);
+    findAlcoholById(id);
+    findClothingById(id);
+    findToyById(id);
+
+}
+
 void Manager::findGroceryById(int id)
 {
     if (groceries[id].getName() != "Unknown")

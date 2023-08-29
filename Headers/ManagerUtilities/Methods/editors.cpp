@@ -45,3 +45,12 @@ void Manager::editToy(int id, string name, double price, unsigned short age)
     toys[id].setPrice(price);
     toys[id].setAge(age);
 }
+
+void Manager::editEmployee(int id, string firstName, string lastName, string contact, string position, double earnings)
+{
+    employees[id].setFirstName(firstName);
+    employees[id].setLastName(lastName);
+    employees[id].setContact(contact);
+    employees[id].setPosition(position);
+    employees[id].setEarnings(earnings);
+}

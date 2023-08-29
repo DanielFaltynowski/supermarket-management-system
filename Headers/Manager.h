@@ -20,11 +20,14 @@ class Manager
 {
 public:
 
-    // Constructors
+    // Constructor & Destructor: Headers/ManagerUtilities/Constructors
+
     Manager(int size);
     ~Manager();
 
-    // Methods
+
+    // Methods: Headers/ManagerUtilities/Methods
+
     void importDataBase();
     void importProducts();
     void importEmployees();
@@ -54,6 +57,7 @@ public:
     void findClothingByName(string name);
     void findToyByName(string name);
 
+    void findProductByPrice(double price);
     void findGroceryByPrice(double price);
     void findAlcoholByPrice(double price);
     void findBeverageByPrice(double price);
@@ -61,6 +65,7 @@ public:
     void findClothingByPrice(double price);
     void findToyByPrice(double price);
 
+    void findProductById(int id);
     void findGroceryById(int id);
     void findAlcoholById(int id);
     void findBeverageById(int id);
@@ -79,6 +84,7 @@ public:
     void editBread(int id, string name, double price, int kcal, double kilograms);
     void editClothing(int id, string name, double price, string size);
     void editToy(int id, string name, double price, unsigned short age);
+    void editEmployee(int id, string firstName, string lastName, string contact, string position, double earnings);
 
     void deleteGrocery(int id);
     void deleteAlcohol(int id);
