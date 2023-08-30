@@ -1,2 +1,16 @@
-Jan;Kowalski;jankowalski@gmail.com;Cashier;3000.000000;
-Janina;Kowalska;janinakowalska@gmail.com;Cashier;4000.000000;
+John;Smith;john.smith@example.com;Cashier;1200.000000;
+Emily;Johnson;emily.johnson@example.com;Manager;2500.000000;
+Michael;Williams;michael.williams@example.com;Stock Clerk;1000.000000;
+Jessica;Brown;jessica.brown@example.com;Cashier;1100.000000;
+William;Jones;william.jones@example.com;Cashier;1150.000000;
+Olivia;Miller;olivia.miller@example.com;Manager;2700.000000;
+Daniel;Davis;daniel.davis@example.com;Stock Clerk;950.000000;
+Sophia;Garcia;sophia.garcia@example.com;Cashier;1120.000000;
+Alex;Martinez;alex.martinez@example.com;Cashier;1180.000000;
+Isabella;Lopez;isabella.lopez@example.com;Manager;2600.000000;
+Ethan;Perez;ethan.perez@example.com;Stock Clerk;980.000000;
+Emma;Wilson;emma.wilson@example.com;Cashier;1250.000000;
+Liam;Anderson;liam.anderson@example.com;Cashier;1220.000000;
+Ava;Thomas;ava.thomas@example.com;Manager;2800.000000;
+Noah;Jackson;noah.jackson@example.com;Stock Clerk;1050.000000;
+Mia;White;mia.white@example.com;Cashier;1080.000000;

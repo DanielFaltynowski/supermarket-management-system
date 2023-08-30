@@ -14,8 +14,12 @@ void Manager::printGroceries()
 {
     for (int i = 0; i < groceriesCounter; i++)
     {
-        cout << "GroceriesID: " << i << endl;
-        groceries[i].description();
+        if (groceries[i].getName() != "Unknown")
+        {
+            cout << "GroceriesID: " << i << endl;
+            groceries[i].description();
+
+        }
     }
 }
 
@@ -23,8 +27,11 @@ void Manager::printAlcohols()
 {
     for (int i = 0; i < alcoholsCounter; i++)
     {
-        cout << "AlcoholsID: " << i << endl;
-        alcohols[i].description();
+        if (alcohols[i].getName() != "Unknown")
+        {
+            cout << "AlcoholsID: " << i << endl;
+            alcohols[i].description();
+        }
     }
 }
 
@@ -32,8 +39,11 @@ void Manager::printBeverages()
 {
     for (int i = 0; i < beveragesCounter; i++)
     {
-        cout << "BeveragesID: " << i << endl;
-        beverages[i].description();
+        if (beverages[i].getName() != "Unknown")
+        {
+            cout << "BeveragesID: " << i << endl;
+            beverages[i].description();
+        }
     }
 }
 
@@ -41,8 +51,11 @@ void Manager::printBreads()
 {
     for (int i = 0; i < breadsCounter; i++)
     {
-        cout << "BreadsID: " << i << endl;
-        breads[i].description();
+        if (breads[i].getName() != "Unknown")
+        {
+            cout << "BreadsID: " << i << endl;
+            breads[i].description();
+        }
     }
 }
 
@@ -50,8 +63,11 @@ void Manager::printClothes()
 {
     for (int i = 0; i < clothesCounter; i++)
     {
-        cout << "ClothesID: " << i << endl;
-        clothes[i].description();
+        if (clothes[i].getName() != "Unknown")
+        {
+            cout << "ClothesID: " << i << endl;
+            clothes[i].description();
+        }
     }
 }
 
@@ -59,8 +75,11 @@ void Manager::printToys()
 {
     for (int i = 0; i < toysCounter; i++)
     {
-        cout << "ToysID: " << i << endl;
-        toys[i].description();
+        if (toys[i].getName() != "Unknown")
+        {
+            cout << "ToysID: " << i << endl;
+            toys[i].description();
+        }
     }
 }
 
@@ -68,7 +87,9 @@ void Manager::printAllEmployees()
 {
     for (int i = 0; i < employeesCounter; i++)
     {
-        cout << "EmployeesID: " << i << endl;
-        employees[i].personalDetails();
+        if (employees[i].getLastName() != "Unknown")
+            cout << "EmployeesID: " << i << endl;
+            employees[i].personalDetails();
+        }
     }
 }

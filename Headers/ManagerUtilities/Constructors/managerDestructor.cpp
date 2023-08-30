@@ -115,7 +115,7 @@ Manager::~Manager()
         }
 
         if (std::rename("Data/Products2.txt", "Data/Products.txt") == 0) {
-            std::cout << "Have a nice day." << std::endl;
+//            std::cout << "Have a nice day." << std::endl;
         } else {
             std::cout << "Error occured." << std::endl;
         }
